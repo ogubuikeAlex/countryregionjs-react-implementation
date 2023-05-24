@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Athiti', sans-serif;
+}
+
+body {
+  padding: 5%;
+  background-color: #E5E5E5;
+  height: max-content;
+}
+
+main {
+  padding: 2rem;
+  display: flex;
+  height: 150%;
+  font-size: 2rem;
+  background-color: #fff;
+  border-radius: 0.6rem;
+}
+
+.submain {
+  width: 50%;
+  /* padding: 2rem;  */
+  height: 100%;
+}
+
+.submain-one-image {
+  width: 65%
+}
+
+.submain-one-form {
+  width: 80%;
+  margin: 4.8rem auto;
+}
+
+.submain-one-form-header {
+  margin-bottom: 2.5rem;
+}
+
+.submain-one-form-header > h1 {
+  font-weight: 600;
+  font-size: 3rem;
+  width: 100%;
+  line-height: 2.9rem;
+  color: #0B4654;
+}
+
+.submain-one-form-body {
+  width: 100%;
+}
+
+.submain-one-form-body-subsection {
+  margin-top: 1.08rem;
+}
+
+.submain-one-form-body-subsection-select {
+  font-size: 1.3rem;
+}
+
+
+.submain-one-form-body-subsection-input {
+  width: 100%;
+  height: 2.5rem;
+  padding: 2rem;
+  border: 1.4783px solid rgba(11, 70, 84, 0.25);
+  border-radius: 5.91319px;
+  font-family: 'Athiti';
+  font-style: normal;
+  font-size: 1.06rem;
+  line-height: 1.187rem;
+  color: rgba(0, 0, 0, 0.5)
+}
+
+
+.input-container {
+  position: relative;
+}
+
+.submain-one-form-body-subsection-input {
+  padding-left: 2rem;
+  border: 2px soild yellowgreen;
+  color: green;
+}
+
+.subdomain-one-form-body-subsection-one-button {
+  width: 25rem;
+  margin-top: 2.4rem;
+  border: none;
+  background: #07B464;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  line-height: 1.19rem;
+  padding: 1.2rem;
+
+  color: #FFFFFF;
+}
+
+.submain-two {
+  background: #EBFCF4;
+}
+
+.submain-two-image-cover {
+  height: 100%;
+  width: 100%;
+}
+
+.submain-two-image {
+  width: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 850px) {
+  body {
+    padding: 0%;
+    /* background-color: #E5E5E5; */
+    height: max-content;
+  }
+
+  main {
+    font-size: 10px;
+    max-height: max-content;
+    height: fit-content;
+    margin: 0;
+  }
+
+  .submain-one {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .submain-zero {
+    width: 100%;
+  }
+
+  .submain-zero-image {
+    width: 100%;
+  }
+
+  .submain-one-form {
+    width: 100%;
+    margin-top: 1.2rem;
+  }
+
+  .submain-one-form-header > h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    width: 100%;
+    color: #0B4654;
+    text-align: center;
+  }
+
+  .subdomain-one-form-body-subsection-one-button {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .submain-two {
+    display: none;
+  }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 850px) {
+  .submain-zero {
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .subdomain-one-form-body-subsection-one-button {
+    width: 100%;
+    margin-top: 2.4rem;
+  }
+
+  .submain-one-form-header > h1 {
+    width: 100%;
+    margin-top: 2.4rem;
+    font-size: 3rem;
+  }
+
+  .submain-one-form-body-subsection-select {
+    font-size: 1.3rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
