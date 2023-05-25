@@ -89,7 +89,7 @@ function App() {
 
     const customStyles = {
         control: (provided) => ({
-            ...provided,           
+            ...provided,
             border: 'border: 1.4783px solid rgba(11, 70, 84, 0.25)',
             borderRadius: '5.91319px',
             fontSize: "1.5rem",
@@ -103,16 +103,16 @@ function App() {
         })
     };
     return (
-        <main>           
+        <main>
             <section className="submain submain-one">
                 <section className="submain-one-img">
-                    <img className="submain-one-image" src={logo} alt=""/>
+                    <img className="submain-one-image" src={logo} alt="" />
                 </section>
-                <section className="submain submain-zero">
+                
                     <section className="submain-zero-image-cover">
-                        <img className="submain-zero-image" src={lady} alt=""/>
+                        <img className="submain-zero-image" src={lady} alt="" />
                     </section>
-                </section>
+              
 
                 <form className="submain-one-form" onSubmit={handleSubmit}>
                     <header className="submain-one-form-header">
@@ -123,7 +123,7 @@ function App() {
                             <Select
                                 type="text"
                                 placeholder="Select a country"
-                                id="name"                                
+                                id="name"
                                 onChange={handleCountryChange}
                                 options={countries}
                                 styles={customStyles}
@@ -135,10 +135,10 @@ function App() {
                                 states?.length !== 0 &&
                                 <Select
                                     placeholder="Select a state"
-                                    id="name"                                   
+                                    id="name"
                                     onChange={handleStateChange}
                                     options={states}
-                                    styles={customStyles} 
+                                    styles={customStyles}
                                     className="submain-one-form-body-subsection-select"
 
                                 />}
@@ -146,10 +146,10 @@ function App() {
                         </section>
                         <section className="submain-one-form-body-subsection">
                             {
-                                lgas && lgas?.length !== 0 && 
+                                lgas && lgas?.length !== 0 &&
                                 <Select
                                     placeholder="Select a Substate"
-                                    id="name"                                    
+                                    id="name"
                                     onChange={handleLGAChange}
                                     options={lgas}
                                     styles={customStyles}
@@ -165,11 +165,9 @@ function App() {
             </section>
             <section className="submain submain-two">
                 <section className="submain-two-image-cover">
-                    <img className="submain-two-image" src={lady} alt=""/>
+                    <img className="submain-two-image" src={lady} alt="" />
                 </section>
-            </section>          
-            
-
+            </section>
         </main>);
 }
 
