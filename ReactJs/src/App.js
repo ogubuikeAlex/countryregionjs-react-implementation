@@ -66,7 +66,7 @@ function App() {
             getLGAs();
         }
 
-    }, [state]);
+    }, [country, state]);
 
     const handleCountryChange = (event) => {
         const { value } = event;
@@ -89,8 +89,7 @@ function App() {
 
     const customStyles = {
         control: (provided) => ({
-            ...provided,
-            fontSize: '16px',
+            ...provided,           
             border: 'border: 1.4783px solid rgba(11, 70, 84, 0.25)',
             borderRadius: '5.91319px',
             fontSize: "1.5rem",
@@ -107,15 +106,15 @@ function App() {
         <main>           
             <section className="submain submain-one">
                 <section className="submain-one-img">
-                    <img className="submain-one-image" src={logo} />
+                    <img className="submain-one-image" src={logo} alt=""/>
                 </section>
                 <section className="submain submain-zero">
                     <section className="submain-zero-image-cover">
-                        <img className="submain-zero-image" src={lady} />
+                        <img className="submain-zero-image" src={lady} alt=""/>
                     </section>
                 </section>
 
-                <form className="submain-one-form">
+                <form className="submain-one-form" onSubmit={handleSubmit}>
                     <header className="submain-one-form-header">
                         <h1>Pick-A-Location</h1>
                     </header>
@@ -166,7 +165,7 @@ function App() {
             </section>
             <section className="submain submain-two">
                 <section className="submain-two-image-cover">
-                    <img className="submain-two-image" src={lady} />
+                    <img className="submain-two-image" src={lady} alt=""/>
                 </section>
             </section>          
             
