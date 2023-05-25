@@ -5,7 +5,6 @@ import Select from 'react-select';
 import CountryRegion from "countryregionjs";
 import "./index.css"
 
-
 function App() {
     const [state, setState] = useState("");
     const [states, setStates] = useState([]);
@@ -13,11 +12,19 @@ function App() {
     const [countries, setCountries] = useState([]);
     const [lga, setLGA] = useState("");
     const [lgas, setLGAs] = useState([]);
+    let countryRegion = null;
+
+    const getCountryRegionInstance = () => {
+        if (!countryRegion) {
+            countryRegion = new CountryRegion();
+        }
+        return countryRegion;
+    };
 
     useEffect(() => {
         const getCountries = async () => {
             try {
-                const countries = await (new CountryRegion()).getCountries();
+                const countries = await getCountryRegionInstance().getCountries();                
                 setCountries(countries.map(country => ({
                     value: country.id,
                     label: country.name
@@ -26,14 +33,13 @@ function App() {
                 console.error(error);
             }
         }
-
         getCountries();
     }, []);
 
     useEffect(() => {
         const getStates = async () => {
             try {
-                const states = await (new CountryRegion()).getStates(country);
+                const states = await getCountryRegionInstance().getStates(country);
                 setStates(states.map(userState => ({
                     value: userState?.id,
                     label: userState?.name
@@ -52,7 +58,7 @@ function App() {
     useEffect(() => {
         const getLGAs = async () => {
             try {
-                const lgas = await (new CountryRegion()).getLGAs(country, state);
+                const lgas = await getCountryRegionInstance().getLGAs(country, state);
                 setLGAs(lgas?.map(lga => ({
                     value: lga?.id,
                     label: lga?.name
