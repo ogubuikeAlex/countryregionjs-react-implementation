@@ -169,7 +169,7 @@ main {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (min-width: 850px) {
-  .submain-zero {
+  .submain-zero-image-cover {
     display: none;
   }
 }
@@ -191,8 +191,6 @@ main {
     font-size: 1.3rem;
   }
 }
-
-/* Large devices (laptops/desktops, 992px and up) */
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
