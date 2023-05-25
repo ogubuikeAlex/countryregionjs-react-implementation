@@ -108,11 +108,11 @@ function App() {
                 <section className="submain-one-img">
                     <img className="submain-one-image" src={logo} alt="" />
                 </section>
-                
-                    <section className="submain-zero-image-cover">
-                        <img className="submain-zero-image" src={lady} alt="" />
-                    </section>
-              
+
+                <section className="submain-zero-image-cover">
+                    <img className="submain-zero-image" src={lady} alt="" />
+                </section>
+
 
                 <form className="submain-one-form" onSubmit={handleSubmit}>
                     <header className="submain-one-form-header">
@@ -157,6 +157,9 @@ function App() {
 
                                 />}
                         </section>
+                        {
+                            !true && lga
+                        }
                         <section className="subdomain-one-form-body-subsection-one">
                             <button className="subdomain-one-form-body-subsection-one-button">Submit</button>
                         </section>
