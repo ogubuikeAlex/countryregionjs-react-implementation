@@ -2,6 +2,8 @@
 # **CountryRegionJS React Demo**
 This repo contains a demo for how you can implement the [countryregionjs](https://www.npmjs.com/package/countryregionjs) library in your react application
 
+Live URL: https://countryregionjs-react.netlify.app/
+
 Check out the [CountryRegionJS Repository](https://github.com/king-Alex-d-great/CountryRegionJS) 
 
 ## **Demo Peek**
