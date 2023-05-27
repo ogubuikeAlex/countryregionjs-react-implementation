@@ -1,6 +1,6 @@
 
 # **CountryRegionJS React Demo**
-This repo contains a demo for how you can implement the[countryregionjs](https://www.npmjs.com/package/countryregionjs) library in your react application
+This repo contains a demo for how you can implement the [countryregionjs](https://www.npmjs.com/package/countryregionjs) library in your react application
 
 Check out the [CountryRegionJS Repository](https://github.com/king-Alex-d-great/CountryRegionJS) 
 
