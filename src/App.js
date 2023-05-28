@@ -12,6 +12,7 @@ function App() {
     const [countries, setCountries] = useState([]);
     const [lga, setLGA] = useState("");
     const [lgas, setLGAs] = useState([]);
+    const ZERO = 0;
     let countryRegion = null;
 
     const getCountryRegionInstance = () => {
@@ -24,7 +25,7 @@ function App() {
     useEffect(() => {
         const getCountries = async () => {
             try {
-                const countries = await getCountryRegionInstance().getCountries();                
+                const countries = await getCountryRegionInstance().getCountries();
                 setCountries(countries.map(country => ({
                     value: country.id,
                     label: country.name
@@ -138,7 +139,7 @@ function App() {
                         </section>
                         <section className="submain-one-form-body-subsection">
                             {
-                                states?.length !== 0 &&
+                                states?.length !== ZERO &&
                                 <Select
                                     placeholder="Select a state"
                                     id="name"
@@ -152,7 +153,7 @@ function App() {
                         </section>
                         <section className="submain-one-form-body-subsection">
                             {
-                                lgas && lgas?.length !== 0 &&
+                                lgas && lgas?.length !== ZERO &&
                                 <Select
                                     placeholder="Select a Substate"
                                     id="name"
